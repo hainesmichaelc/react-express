@@ -1,2 +1,5 @@
 # react-express
-React front-end with Express backend ready for deployment to Azure App Service
+ * React app
+ * Express backend
+ * Client-side routing enabled
+ * Ready to deploy to Azure App Service with CD pipeline
