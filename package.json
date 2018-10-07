@@ -1,0 +1,43 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": "10.6.0"
+  },
+  "scripts": {
+    "start-client": "react-scripts start",
+    "build-client": "react-scripts build",
+    "test-client": "react-scripts test",
+    "eject-client": "react-scripts eject",
+    "start-server": "nodemon ./server/bin/www",
+    "dev": "concurrently --kill-others-on-fail \"npm run start-server\" \"npm run start-client\"",
+    "start": "node ./server/bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.4",
+    "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1",
+    "nodemon": "^1.18.4"
+  },
+  "proxy": "https://localhost:3001",
+  "homepage": "https://test-react-app.azurewebsites.net/",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
